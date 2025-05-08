@@ -396,6 +396,10 @@ export interface ApiGeneratedTemplateGeneratedTemplate
       Schema.Attribute.Private;
     notes: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
+    source_template: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::source-template.source-template'
+    >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
