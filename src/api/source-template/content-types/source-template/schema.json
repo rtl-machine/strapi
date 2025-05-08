@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "source_templates",
+  "info": {
+    "singularName": "source-template",
+    "pluralName": "source-templates",
+    "displayName": "Source Template"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "notes": {
+      "type": "richtext"
+    }
+  }
+}

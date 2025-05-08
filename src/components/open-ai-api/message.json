@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_open_ai_api_messages",
+  "info": {
+    "displayName": "message",
+    "icon": "message",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "assistant",
+        "developer",
+        "tool",
+        "user",
+        "system",
+        "function"
+      ]
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generated_templates",
+  "info": {
+    "singularName": "generated-template",
+    "pluralName": "generated-templates",
+    "displayName": "Generated Template",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "chats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "open-ai-api.chat"
+    }
+  }
+}
