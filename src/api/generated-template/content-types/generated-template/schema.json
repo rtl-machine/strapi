@@ -17,6 +17,12 @@
     "content": {
       "type": "text"
     },
+    "title-template":{
+      "type": "string"
+    },
+    "description-template":{
+      "type": "string"
+    },
     "description": {
       "type": "text"
     },

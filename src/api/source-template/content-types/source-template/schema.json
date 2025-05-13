@@ -13,6 +13,12 @@
     "title": {
       "type": "string"
     },
+    "title-template":{
+      "type": "string"
+    },
+    "description-template":{
+      "type": "string"
+    },
     "content": {
       "type": "text"
     },
