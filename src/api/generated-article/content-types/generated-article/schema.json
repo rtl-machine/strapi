@@ -25,7 +25,17 @@
     "notes": {
       "type": "richtext"
     },
-    "chats": {
+    "content_chats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "open-ai-api.chat"
+    },
+    "description_chats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "open-ai-api.chat"
+    },
+    "title_chats": {
       "type": "component",
       "repeatable": true,
       "component": "open-ai-api.chat"
