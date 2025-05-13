@@ -13,13 +13,13 @@
     "title": {
       "type": "string"
     },
-    "title-template":{
+    "title_template":{
       "type": "string"
     },
-    "slug-template":{
+    "slug_template":{
       "type": "string"
     },
-    "description-template":{
+    "description_template":{
       "type": "string"
     },
     "content": {
