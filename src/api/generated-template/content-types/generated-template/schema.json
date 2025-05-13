@@ -20,6 +20,9 @@
     "title-template":{
       "type": "string"
     },
+    "slug-template":{
+      "type": "string"
+    },
     "description-template":{
       "type": "string"
     },

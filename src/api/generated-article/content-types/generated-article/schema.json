@@ -19,6 +19,9 @@
     "description": {
       "type": "text"
     },
+    "slug": {
+      "type": "string"
+    },
     "notes": {
       "type": "richtext"
     },
