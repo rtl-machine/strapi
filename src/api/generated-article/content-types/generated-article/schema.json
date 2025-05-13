@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "generated_templates",
+  "collectionName": "generated_articles",
   "info": {
-    "singularName": "generated-template",
-    "pluralName": "generated-templates",
-    "displayName": "Generated Template",
-    "description": ""
+    "singularName": "generated-article",
+    "pluralName": "generated-articles",
+    "displayName": "Generated Article"
   },
   "options": {
     "draftAndPublish": false

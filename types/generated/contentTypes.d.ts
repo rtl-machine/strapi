@@ -369,6 +369,43 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiGeneratedArticleGeneratedArticle
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'generated_articles';
+  info: {
+    displayName: 'Generated Article';
+    pluralName: 'generated-articles';
+    singularName: 'generated-article';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
+    content: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::generated-article.generated-article'
+    > &
+      Schema.Attribute.Private;
+    notes: Schema.Attribute.RichText;
+    publishedAt: Schema.Attribute.DateTime;
+    source_template: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::source-template.source-template'
+    >;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGeneratedTemplateGeneratedTemplate
   extends Struct.CollectionTypeSchema {
   collectionName: 'generated_templates';
@@ -379,7 +416,7 @@ export interface ApiGeneratedTemplateGeneratedTemplate
     singularName: 'generated-template';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
@@ -948,6 +985,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::generated-article.generated-article': ApiGeneratedArticleGeneratedArticle;
       'api::generated-template.generated-template': ApiGeneratedTemplateGeneratedTemplate;
       'api::source-template.source-template': ApiSourceTemplateSourceTemplate;
       'plugin::content-releases.release': PluginContentReleasesRelease;
