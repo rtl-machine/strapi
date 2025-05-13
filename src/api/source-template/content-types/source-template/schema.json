@@ -23,8 +23,8 @@
     "description_template": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
+    "content_template": {
+      "type": "richtext"
     },
     "description": {
       "type": "text"

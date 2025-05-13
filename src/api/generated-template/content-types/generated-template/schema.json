@@ -14,8 +14,8 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
+    "content_template": {
+      "type": "richtext"
     },
     "title_template":{
       "type": "string"

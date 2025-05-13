@@ -382,7 +382,7 @@ export interface ApiGeneratedArticleGeneratedArticle
   };
   attributes: {
     chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
-    content: Schema.Attribute.Text;
+    content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -422,7 +422,7 @@ export interface ApiGeneratedTemplateGeneratedTemplate
   };
   attributes: {
     chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
-    content: Schema.Attribute.Text;
+    content_template: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -463,7 +463,7 @@ export interface ApiSourceTemplateSourceTemplate
     draftAndPublish: false;
   };
   attributes: {
-    content: Schema.Attribute.Text;
+    content_template: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
