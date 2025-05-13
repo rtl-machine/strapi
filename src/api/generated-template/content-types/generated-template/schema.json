@@ -41,6 +41,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::source-template.source-template"
+    },
+    "election": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.election"
     }
   }
 }

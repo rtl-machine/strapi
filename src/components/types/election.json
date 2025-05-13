@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_types_elections",
+  "info": {
+    "displayName": "election",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "zupan",
+        "gradonacelnik",
+        "nacelnik"
+      ]
+    }
+  }
+}

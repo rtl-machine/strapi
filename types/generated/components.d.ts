@@ -29,11 +29,24 @@ export interface OpenAiApiMessage extends Struct.ComponentSchema {
   };
 }
 
+export interface TypesElection extends Struct.ComponentSchema {
+  collectionName: 'components_types_elections';
+  info: {
+    description: '';
+    displayName: 'election';
+    icon: 'book';
+  };
+  attributes: {
+    type: Schema.Attribute.Enumeration<['zupan', 'gradonacelnik', 'nacelnik']>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'open-ai-api.chat': OpenAiApiChat;
       'open-ai-api.message': OpenAiApiMessage;
+      'types.election': TypesElection;
     }
   }
 }

@@ -387,6 +387,7 @@ export interface ApiGeneratedArticleGeneratedArticle
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    election: Schema.Attribute.Component<'types.election', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -395,6 +396,7 @@ export interface ApiGeneratedArticleGeneratedArticle
       Schema.Attribute.Private;
     notes: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
     source_template: Schema.Attribute.Relation<
       'oneToOne',
       'api::source-template.source-template'
@@ -425,6 +427,8 @@ export interface ApiGeneratedTemplateGeneratedTemplate
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    description_template: Schema.Attribute.String;
+    election: Schema.Attribute.Component<'types.election', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -433,11 +437,13 @@ export interface ApiGeneratedTemplateGeneratedTemplate
       Schema.Attribute.Private;
     notes: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
+    slug_template: Schema.Attribute.String;
     source_template: Schema.Attribute.Relation<
       'oneToOne',
       'api::source-template.source-template'
     >;
     title: Schema.Attribute.String;
+    title_template: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -448,6 +454,7 @@ export interface ApiSourceTemplateSourceTemplate
   extends Struct.CollectionTypeSchema {
   collectionName: 'source_templates';
   info: {
+    description: '';
     displayName: 'Source Template';
     pluralName: 'source-templates';
     singularName: 'source-template';
@@ -461,6 +468,8 @@ export interface ApiSourceTemplateSourceTemplate
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    description_template: Schema.Attribute.String;
+    election: Schema.Attribute.Component<'types.election', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -469,7 +478,9 @@ export interface ApiSourceTemplateSourceTemplate
       Schema.Attribute.Private;
     notes: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
+    slug_template: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    title_template: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

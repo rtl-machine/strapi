@@ -4,7 +4,8 @@
   "info": {
     "singularName": "source-template",
     "pluralName": "source-templates",
-    "displayName": "Source Template"
+    "displayName": "Source Template",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -13,13 +14,13 @@
     "title": {
       "type": "string"
     },
-    "title_template":{
+    "title_template": {
       "type": "string"
     },
-    "slug_template":{
+    "slug_template": {
       "type": "string"
     },
-    "description_template":{
+    "description_template": {
       "type": "string"
     },
     "content": {
@@ -30,6 +31,11 @@
     },
     "notes": {
       "type": "richtext"
+    },
+    "election": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.election"
     }
   }
 }
