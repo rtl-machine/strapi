@@ -381,12 +381,13 @@ export interface ApiGeneratedArticleGeneratedArticle
     draftAndPublish: false;
   };
   attributes: {
-    chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     content: Schema.Attribute.RichText;
+    content_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    description_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     election: Schema.Attribute.Component<'types.election', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -402,6 +403,7 @@ export interface ApiGeneratedArticleGeneratedArticle
       'api::source-template.source-template'
     >;
     title: Schema.Attribute.String;
+    title_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -421,12 +423,13 @@ export interface ApiGeneratedTemplateGeneratedTemplate
     draftAndPublish: false;
   };
   attributes: {
-    chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
+    content_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     content_template: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    description_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     description_template: Schema.Attribute.String;
     election: Schema.Attribute.Component<'types.election', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -443,6 +446,7 @@ export interface ApiGeneratedTemplateGeneratedTemplate
       'api::source-template.source-template'
     >;
     title: Schema.Attribute.String;
+    title_chats: Schema.Attribute.Component<'open-ai-api.chat', true>;
     title_template: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

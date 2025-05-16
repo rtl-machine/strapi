@@ -37,7 +37,16 @@ export interface TypesElection extends Struct.ComponentSchema {
     icon: 'book';
   };
   attributes: {
+    round: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+          min: 1;
+        },
+        number
+      >;
     type: Schema.Attribute.Enumeration<['zupan', 'gradonacelnik', 'nacelnik']>;
+    win: Schema.Attribute.Boolean;
   };
 }
 
