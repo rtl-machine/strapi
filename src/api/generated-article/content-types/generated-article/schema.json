@@ -4,7 +4,8 @@
   "info": {
     "singularName": "generated-article",
     "pluralName": "generated-articles",
-    "displayName": "Generated Article"
+    "displayName": "Generated Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -49,6 +50,14 @@
       "type": "component",
       "repeatable": false,
       "component": "types.election"
+    },
+    "valid": {
+      "type": "boolean",
+      "default": false
+    },
+    "regenerate": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
