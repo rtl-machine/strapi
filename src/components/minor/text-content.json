@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_minor_text_contents",
+  "info": {
+    "displayName": "text_content",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

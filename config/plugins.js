@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   'record-locking': {
-    enabled: true,
+    enabled: false,
   },
   "users-permissions": {
     config: {

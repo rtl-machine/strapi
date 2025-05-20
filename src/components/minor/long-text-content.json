@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_minor_long_text_contents",
+  "info": {
+    "displayName": "long_text_content",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    }
+  }
+}

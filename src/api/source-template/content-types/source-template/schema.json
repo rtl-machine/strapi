@@ -36,6 +36,17 @@
       "type": "component",
       "repeatable": false,
       "component": "types.election"
+    },
+    "additional_title_templates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "minor.text-content"
+    },
+    "additional_description_templates": {
+      "displayName": "long_text_content",
+      "type": "component",
+      "repeatable": true,
+      "component": "minor.long-text-content"
     }
   }
 }
