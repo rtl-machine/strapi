@@ -56,6 +56,11 @@
       "type": "component",
       "repeatable": false,
       "component": "types.election"
+    },
+    "generation": {
+      "type": "integer",
+      "default": 1,
+      "required": true
     }
   }
 }

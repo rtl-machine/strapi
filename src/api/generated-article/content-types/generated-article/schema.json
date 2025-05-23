@@ -58,6 +58,11 @@
     "regenerate": {
       "type": "boolean",
       "default": false
+    },
+    "generation": {
+      "type": "integer",
+      "default": 1,
+      "required": true
     }
   }
 }

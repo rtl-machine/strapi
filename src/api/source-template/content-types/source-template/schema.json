@@ -47,6 +47,11 @@
       "type": "component",
       "repeatable": true,
       "component": "minor.long-text-content"
+    },
+    "generation": {
+      "type": "integer",
+      "default": 1,
+      "required": true
     }
   }
 }
