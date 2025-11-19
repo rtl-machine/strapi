@@ -1022,10 +1022,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notum-cz/strapi-plugin-record-locking@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@notum-cz/strapi-plugin-record-locking/-/strapi-plugin-record-locking-2.0.0.tgz#389bf882255e9151193396fa136e22923e205000"
-  integrity sha512-SBbbhrg3x5Qy82Uls1IgZe/sexA+f8SH/DGlwCWl/SnXyjvODHQdj+XC4qH8aFarZHhs3aMD894DnY6lsE2O3g==
+"@notum-cz/strapi-plugin-record-locking@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@notum-cz/strapi-plugin-record-locking/-/strapi-plugin-record-locking-2.0.1.tgz#1191d40bd52ac6edeecb2e0d99a38d2fe236ceaa"
+  integrity sha512-OCJPTas42RMxxbhWNQhZkMsgw9GMXey7rQd09b8ROuLBn5hqin6bWDLnihD9uuMqNaaou3hK/Rd8mnRSjp8scQ==
   dependencies:
     "@strapi/design-system" "^2.0.0-rc.11"
     "@strapi/icons" "^2.0.0-rc.11"

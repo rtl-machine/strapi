@@ -15,7 +15,7 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@notum-cz/strapi-plugin-record-locking": "^2.0.0",
+    "@notum-cz/strapi-plugin-record-locking": "^2.0.1",
     "@strapi/plugin-users-permissions": "5.11.0",
     "@strapi/provider-upload-local": "5.11.0",
     "@strapi/strapi": "5.11.0",
